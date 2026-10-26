@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+body {
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.container {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 20px #02dbf8f5;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 650px;
+    width: 100%;
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.tagline {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+.campo {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px; 
+    border-radius: 6px;
+    border: 1px solid #000000;
+}
+.pergunta {
+    background: #000000;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px; 
+}
+.pergunta p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pergunta label {
+    display: block;
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #009dffb8;
+    color: #fdfeff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+button:hover {
+    background-color: #1500ffb8;
+    color: #ffffff;
+}
+.perfil-card {
+    padding: 20px;
+    border-radius: 8px; 
+    margin: 15px 0;
+    text-align: center;
+}
+.perfil-card img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #00eaffb8;
+}
+.categoria {
+    color: #000000;
+    margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    .pergunta {
+        padding: 10px;
+    }
+    button {
+        padding: 10px;
+    }
+}
+.oculto {
+    display: none !important;
+}
+html {
+    scrollbar-color: #049fc2 rgba(0, 0, 0, 0.9) !important;
+}

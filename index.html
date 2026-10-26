@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Missão Aura </title>
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+    <div class="container">
+        <h1>Missão Aura</h1>
+        <form id="form-missaoaura">
+            <div class="campo">
+                <label for="nome">Nome do explorador:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="campo">
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="data" required>
+            </div>
+            <div class="pergunta">
+                <p>1. Diante de uma tempestade magnética em solo desconhecido, o que você faria?</p>
+                <label><input type="radio" name="p1" value="1" required> Construiria um escudo de proteção para o abrigo.</label>
+                <label><input type="radio" name="p1" value="2"> Coletaria dados atmosféricos para análise.</label>
+                <label><input type="radio" name="p1" value="3"> Mapearia rotas de fuga seguras.</label>
+                <label><input type="radio" name="p1" value="4"> Manteria a calma da equipe e coordenaria os recursos.</label>
+            </div>
+            <div class="pergunta">
+                <p>2. Qual ferramenta é indispensável no seu kit de exploração?</p>
+                <label><input type="radio" name="p2" value="1" required> Kit de ferramentas.</label>
+                <label><input type="radio" name="p2" value="2"> Analisador biológico e microscópio digital.</label>
+                <label><input type="radio" name="p2" value="3"> Scanner holográfico de terreno.</label>
+                <label><input type="radio" name="p2" value="4"> Dispositivo de comunicação de longa distância.</label>
+            </div>
+            <div class="pergunta">
+                <p>3. Qual o seu principal objetivo ao pisar em um novo planeta?</p>
+                <label><input type="radio" name="p3" value="1" required> Montar uma base segura e funcional.</label>
+                <label><input type="radio" name="p3" value="2"> Descobrir novas formas de vida e minerais.</label>
+                <label><input type="radio" name="p3" value="3"> Explorar áreas desconhecidas e perigosas.</label>
+                <label><input type="radio" name="p3" value="4"> Garantir o bem-estar e o sucesso da tripulação.</label>
+            </div>
+            <div class="pergunta">
+                <p>4. Como você toma decisões sob extrema pressão?</p>
+                <label><input type="radio" name="p4" value="1" required> Praticamente, focando no que pode ser construído ou reparado.</label>
+                <label><input type="radio" name="p4" value="2"> Analiticamente, baseando-me em dados e evidências.</label>
+                <label><input type="radio" name="p4" value="3"> Rapidamente, confiando nos meus instintos de navegação.</label>
+                <label><input type="radio" name="p4" value="4"> Estrategicamente, ouvindo a equipe e liderando.</label>
+            </div>
+            <br>
+            <button type="submit" id="btn-calcular">Descobrir Perfil</button>
+        </form>
+
+        <div id="resultado" class="oculto">
+            <h2>Resultado da Avaliação</h2>
+            <p><strong>Explorador:</strong> <span id="name"></span> (<span id="idade"></span> anos)</p>
+            <div class="perfil-card">
+                <img id="imagem" src="XXX" alt="Imagem do perfil">
+                <h3 id="perfil-nome"></h3>
+                <p class="categoria"><strong>Categoria:</strong> <span id="categoria"></span></p>
+                <p id="descricao"></p>
+            </div>
+            <button id="btn-refazer">-Refaça-</button>
+        </div>
+    </div>
+  <script src="script.js"></script>
+ </body>
+</html>
